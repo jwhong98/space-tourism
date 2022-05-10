@@ -35,18 +35,28 @@ export const MenuContainer = styled.div`
 `;
 
 export const NavMenu = styled.ul`
+  height: 100%;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 48px;
   margin-left: 14.8%;
+  .selected {
+    border-bottom: 3px solid #fff;
+  }
 `;
 
 export const MenuItem = styled.li`
+  height: 100%;
+  display: flex;
+  align-items: center;
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.7px;
+  gap: 12px;
   font-size: 16px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
 
   span {
     font-weight: bold;
