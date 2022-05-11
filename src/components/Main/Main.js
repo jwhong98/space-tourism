@@ -13,9 +13,9 @@ const Main = () => {
   return (
     <MainContainer>
       <Navbar pageHandler={pageHandler} />
-      {/* {selectedPage === "home" && <Home />}
-      {selectedPage === "destination" && <Destination />} */}
-      <Crew />
+      {selectedPage === "home" && <Home />}
+      {selectedPage === "destination" && <Destination />}
+      {selectedPage === "crew" && <Crew />}
     </MainContainer>
   );
 };

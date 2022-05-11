@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CrewContainer,
   CrewWrap,
@@ -7,12 +7,15 @@ import {
   CrewInfo,
   CrewImg,
 } from "./CrewElements";
-import img from "../../assets/crew/image-douglas-hurley.png";
 import data from "../../data.json";
 import CrewSelection from "./CrewSelection";
 
 const Crew = () => {
-  const crew = data.crew[0];
+  const [select, setSelect] = useState(0);
+  const crew = data.crew[select];
+  const onSelect = (selection) => {
+    setSelect(selection);
+  };
   return (
     <CrewContainer>
       <CrewWrap>
@@ -26,10 +29,10 @@ const Crew = () => {
               <p className="name">{crew.name}</p>
               <p className="bio">{crew.bio}</p>
             </CrewInfo>
-            <CrewSelection />
+            <CrewSelection onSelect={onSelect} />
           </CrewText>
           <CrewImg>
-            <img src={img} alt="" />
+            <img src={crew.images.png} alt="" />
           </CrewImg>
         </CrewContent>
       </CrewWrap>

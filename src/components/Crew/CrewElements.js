@@ -7,11 +7,12 @@ export const CrewContainer = styled.section`
   background-image: url(${desktopBG});
   background-size: cover;
   display: flex;
+  overflow: hidden;
 `;
 
 export const CrewWrap = styled.div`
   width: 100%;
-  height: 70%;
+  height: 700px;
   max-width: 1110px;
   margin: 0 auto;
   margin-top: auto;
@@ -50,6 +51,7 @@ export const CrewText = styled.div`
 export const CrewInfo = styled.article`
   font-family: "Bellefair", serif;
   text-transform: uppercase;
+  /* width: 614px; */
   .role {
     font-size: 32px;
     color: #979797;
@@ -69,4 +71,9 @@ export const CrewInfo = styled.article`
   }
 `;
 
-export const CrewImg = styled.div``;
+export const CrewImg = styled.div`
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;

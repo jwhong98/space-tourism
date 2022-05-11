@@ -10,12 +10,10 @@ import {
   TravelInfo,
 } from "./DestinationElements";
 import data from "../../data.json";
-import moon from "../../assets/destination/image-moon.png";
 
 const Destination = () => {
   const [planet, setPlanet] = useState(0);
   const destination = data.destinations[planet];
-  //   const image = require(destination.images.png);
   const selectHandler = (position) => {
     setPlanet(position);
   };
@@ -28,7 +26,7 @@ const Destination = () => {
         </h2>
         <ContentWrap>
           <ContentImg>
-            <img src={moon} alt="" />
+            <img src={destination.images.png} alt="" />
           </ContentImg>
           <ContentText>
             <DestinationSelect selectHandler={selectHandler} />
