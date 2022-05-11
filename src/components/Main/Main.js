@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Crew from "../Crew/Crew";
 import Destination from "../Destination/Destination";
 import Home from "../Home/Home";
 import Navbar from "../Navbar/Navbar";
@@ -12,8 +13,9 @@ const Main = () => {
   return (
     <MainContainer>
       <Navbar pageHandler={pageHandler} />
-      {selectedPage === "home" && <Home />}
-      {selectedPage === "destination" && <Destination />}
+      {/* {selectedPage === "home" && <Home />}
+      {selectedPage === "destination" && <Destination />} */}
+      <Crew />
     </MainContainer>
   );
 };

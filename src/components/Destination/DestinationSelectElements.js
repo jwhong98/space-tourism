@@ -12,6 +12,10 @@ export const SelectList = styled.ul`
     letter-spacing: 2.7px;
     cursor: pointer;
     padding-bottom: 12px;
+
+    &:hover {
+      border-bottom: 3px solid #979797;
+    }
   }
 
   .selected {

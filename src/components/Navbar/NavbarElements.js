@@ -58,6 +58,10 @@ export const MenuItem = styled.li`
   cursor: pointer;
   border-bottom: 3px solid transparent;
 
+  &:hover {
+    border-bottom: 3px solid #979797;
+  }
+
   span {
     font-weight: bold;
   }

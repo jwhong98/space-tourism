@@ -58,4 +58,5 @@ export const HomeExplore = styled.button`
   font-family: "Bellefair", serif;
   letter-spacing: 2px;
   cursor: pointer;
+  z-index: 10;
 `;
