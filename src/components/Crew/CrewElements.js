@@ -72,8 +72,11 @@ export const CrewInfo = styled.article`
 `;
 
 export const CrewImg = styled.div`
+  height: 100%;
+  display: flex;
   img {
-    width: 100%;
-    height: auto;
+    margin-top: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 `;

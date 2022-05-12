@@ -11,10 +11,16 @@ export const Selection = styled.ul`
     border: none;
     outline: none;
     border-radius: 50%;
-    background: #979797;
+    background: #fff;
+    opacity: 0.1744;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   .active {
-    background: #fff;
+    opacity: 1;
   }
 `;
