@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
@@ -41,12 +42,23 @@ export const NavMenu = styled.ul`
   align-items: center;
   gap: 48px;
   margin-left: 14.8%;
+`;
+
+export const MenuItem = styled.li`
+  height: 100%;
+
+  span {
+    font-weight: bold;
+  }
+
   .selected {
     border-bottom: 3px solid #fff;
   }
 `;
 
-export const MenuItem = styled.li`
+export const StyledLink = styled(Link)`
+  text-decoration: inherit;
+  color: inherit;
   height: 100%;
   display: flex;
   align-items: center;
@@ -60,9 +72,5 @@ export const MenuItem = styled.li`
 
   &:hover {
     border-bottom: 3px solid #979797;
-  }
-
-  span {
-    font-weight: bold;
   }
 `;
